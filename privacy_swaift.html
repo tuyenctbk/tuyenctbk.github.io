@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - SwAIft</title>
+    <style>
+        :root {
+            --primary-color: #3b82f6;
+            --text-color: #1e293b;
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --border-color: #e2e8f0;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --primary-color: #60a5fa;
+                --text-color: #f1f5f9;
+                --bg-color: #0f172a;
+                --card-bg: #1e293b;
+                --border-color: #334155;
+            }
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            border: 1px solid var(--border-color);
+        }
+
+        h1 {
+            color: var(--primary-color);
+            margin-top: 0;
+            font-size: 2.2rem;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 12px;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            margin-top: 28px;
+            font-size: 1.4rem;
+        }
+
+        p, li {
+            font-size: 1rem;
+        }
+
+        ul {
+            padding-left: 24px;
+        }
+
+        .highlight {
+            background-color: rgba(59, 130, 246, 0.1);
+            border-left: 4px solid var(--primary-color);
+            padding: 12px 16px;
+            margin: 16px 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Privacy Policy</h1>
+        <p><strong>App Name:</strong> SwAIft</p>
+        <p><strong>Package Name:</strong> com.soloprono.swaift</p>
+        <p><strong>Effective Date:</strong> August 8, 2026</p>
+
+        <div class="highlight">
+            <strong>Summary:</strong> SwAIft is designed with a privacy-first architecture. Your automation flows, device trigger data, and API keys remain on your device. We do not collect, store, or sell your personal information.
+        </div>
+
+        <h2>1. Introduction</h2>
+        <p>Welcome to <strong>SwAIft</strong> ("we," "our," or "us"). We respect your privacy and are committed to protecting the personal data and device information processed through our application. This Privacy Policy explains how data is handled when you use the SwAIft mobile application.</p>
+
+        <h2>2. Information Collection and Use</h2>
+        <p>SwAIft is a local-first automation tool. We do not maintain external servers to harvest, track, or profile user data.</p>
+        
+        <h3>A. User-Provided API Keys (Bring Your Own Key - BYOK)</h3>
+        <p>To use AI-powered features (such as the Zero-Logic AI Routine Studio), you may provide a Google Gemini API Key. This key is stored securely on your device's local storage and is transmitted directly and exclusively to Google's Gemini API servers to process your prompts.</p>
+
+        <h3>B. Device Permissions & Sensor Data</h3>
+        <p>To execute automated background routines, SwAIft may request access to specific Android permissions based on the features you choose to enable:</p>
+        <ul>
+            <li><strong>Location Access (Fine/Coarse):</strong> Used strictly for location-based geofencing triggers (e.g., executing routines when arriving at work or leaving home).</li>
+            <li><strong>Bluetooth & Wi-Fi State:</strong> Used to detect network connectivity triggers (e.g., connecting to car audio or home Wi-Fi).</li>
+            <li><strong>Activity Recognition:</strong> Used to detect motion triggers (e.g., walking, driving).</li>
+            <li><strong>Do Not Disturb / Notification Policy:</strong> Used to automate sound and focus profiles based on your configured routines.</li>
+            <li><strong>Post Notifications:</strong> Used to display foreground service status and execution logs.</li>
+        </ul>
+        <p><em>All sensor evaluation and trigger checks are performed locally on your device.</em></p>
+
+        <h3>C. Local Data Storage</h3>
+        <p>SwAIft utilizes a local Room database to store your configured automation flows, pre-built templates, and execution history (Transparency Audit Log). This data never leaves your device unless you manually export it.</p>
+
+        <h2>3. Third-Party Services</h2>
+        <p>When using AI generation features, SwAIft communicates with third-party APIs as directed by your configuration:</p>
+        <ul>
+            <li><strong>Google Gemini API:</strong> Prompts entered into the AI Routine Studio or Q&A Assistant are sent directly to Google's Gemini API endpoints. The processing of these prompts is governed by <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.</li>
+        </ul>
+
+        <h2>4. Data Security</h2>
+        <p>We prioritize the security of your data. Because all automation rules, execution logs, and API credentials are kept in sandboxed local app storage, your data is protected by Android's built-in security model. We do not operate remote databases that could be subject to data breaches.</p>
+
+        <h2>5. Your Choices & Data Control</h2>
+        <ul>
+            <li><strong>Permission Control:</strong> You can grant or revoke system permissions at any time through your device's <em>Settings > Apps > SwAIft > Permissions</em>.</li>
+            <li><strong>Data Deletion:</strong> Clearing the app's cache and storage, or uninstalling SwAIft, immediately and permanently deletes all stored routines, logs, and API keys from your device.</li>
+        </ul>
+
+        <h2>6. Children's Privacy</h2>
+        <p>SwAIft is not directed to children under the age of 13, and we do not knowingly collect personal information from children.</p>
+
+        <h2>7. Changes to This Privacy Policy</h2>
+        <p>We may update our Privacy Policy from time to time. Any changes will be posted on this page with an updated "Effective Date." You are advised to review this page periodically for any updates.</p>
+
+        <h2>8. Contact Us</h2>
+        <p>If you have any questions or suggestions regarding this Privacy Policy, please contact us at:</p>
+        <p><strong>Email:</strong> support@soloprono.com</p>
+
+        <div class="footer">
+            &copy; 2026 Soloprono. All rights reserved.
+        </div>
+    </div>
+</body>
+</html>
