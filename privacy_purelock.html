@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - PureLock Privacy Suite</title>
+    <style>
+        :root {
+            --bg-color: #0b0f19;
+            --card-bg: #111827;
+            --text-primary: #f3f4f6;
+            --text-secondary: #9ca3af;
+            --accent-color: #3b82f6;
+            --accent-gradient: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+            --border-color: #1f2937;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            line-height: 1.7;
+            margin: 0;
+            padding: 24px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 40px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+        }
+        h1 {
+            color: #ffffff;
+            font-size: 2rem;
+            margin-bottom: 8px;
+            background: var(--accent-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .last-updated {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin-bottom: 32px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 16px;
+        }
+        h2 {
+            color: #60a5fa;
+            font-size: 1.3rem;
+            margin-top: 32px;
+            margin-bottom: 12px;
+        }
+        p, li {
+            color: var(--text-secondary);
+            margin-bottom: 12px;
+        }
+        ul {
+            margin-top: 8px;
+            margin-bottom: 16px;
+            padding-left: 20px;
+        }
+        li strong {
+            color: var(--text-primary);
+        }
+        .highlight-box {
+            background: rgba(59, 130, 246, 0.1);
+            border-left: 4px solid var(--accent-color);
+            padding: 16px;
+            border-radius: 0 8px 8px 0;
+            margin: 20px 0;
+        }
+        .highlight-box p {
+            margin: 0;
+            color: var(--text-primary);
+        }
+        footer {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            border-top: 1px solid var(--border-color);
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Privacy Policy</h1>
+        <div class="last-updated">Effective Date: August 12, 2026 | PureLock Privacy Suite</div>
+
+        <div class="highlight-box">
+            <p><strong>Core Commitment:</strong> PureLock is built on an absolute <strong>offline-first, zero-knowledge architecture</strong>. We do not collect, transmit, store, or monetize your personal data, credentials, vault secrets, or intruder photos on any external servers or cloud databases.</p>
+        </div>
+
+        <h2>1. Overview</h2>
+        <p>PureLock ("we", "our", or "app") is designed to provide robust privacy protection, app locking, secure encrypted vault storage, and intrusion detection directly on your local Android device. This Privacy Policy explains how information is handled when you use PureLock.</p>
+
+        <h2>2. Local Data Storage & Zero Cloud Transmission</h2>
+        <p>All data generated or managed by PureLock remains strictly on your device:</p>
+        <ul>
+            <li><strong>Encrypted Vault Items:</strong> Passwords, notes, and secure items are encrypted locally and stored in an offline Room database on your device.</li>
+            <li><strong>Intruder Selfies:</strong> Photos captured when unauthorized unlock attempts occur are stored solely in your device's local application storage and can be viewed or deleted by you at any time.</li>
+            <li><strong>App Lock & Security Settings:</strong> App lock configurations, schedules, and preferences are stored locally using encrypted SharedPreferences and local databases.</li>
+        </ul>
+        <p>Because PureLock does not require or utilize internet connectivity for its core operations, your data never leaves your physical device.</p>
+
+        <h2>3. Device Permissions & Explanation</h2>
+        <p>To function securely and effectively, PureLock requests specific Android system permissions. Each is used strictly for its stated security purpose:</p>
+        <ul>
+            <li><strong>Accessibility Service (<code style="color:#60a5fa">BIND_ACCESSIBILITY_SERVICE</code>):</strong> Used exclusively to detect when protected apps are launched so that the secure lock overlay can be displayed immediately. This service does not read user keystrokes, personal messages, or screen contents outside of app launch detection.</li>
+            <li><strong>Camera (<code style="color:#60a5fa">CAMERA</code>):</strong> Used locally to capture intruder selfie photos upon repeated failed unlock attempts. Photos are never uploaded or shared.</li>
+            <li><strong>System Alert Window (<code style="color:#60a5fa">SYSTEM_ALERT_WINDOW</code>):</strong> Required to render the secure lock overlay screen on top of protected applications.</li>
+            <li><strong>Biometric Hardware (<code style="color:#60a5fa">USE_BIOMETRIC</code>):</strong> Utilized locally via the Android BiometricPrompt API for fingerprint and face authentication.</li>
+            <li><strong>Foreground Service (<code style="color:#60a5fa">FOREGROUND_SERVICE</code>):</strong> Ensures reliable background protection and monitoring for your locked applications.</li>
+        </ul>
+
+        <h2>4. Third-Party Services & Analytics</h2>
+        <p>PureLock contains <strong>no third-party advertising SDKs, tracking pixels, or remote analytics tools</strong>. We do not track your app usage habits or share any information with advertisers, data brokers, or analytics providers.</p>
+
+        <h2>5. Data Security</h2>
+        <p>We implement robust industry-standard security measures including hardware-backed encryption keys (Android Keystore), local database encryption, and secure memory clearing protocols to safeguard your sensitive information against unauthorized access.</p>
+
+        <h2>6. Changes to This Privacy Policy</h2>
+        <p>We may update this Privacy Policy from time to time. Any changes will be reflected within the app and on our official release documentation. Continued use of the application constitutes acceptance of the updated policy.</p>
+
+        <h2>7. Contact Us</h2>
+        <p>If you have any questions, feedback, or concerns regarding this Privacy Policy or your privacy rights while using PureLock, please contact us locally or via your support channel.</p>
+
+        <footer>
+            &copy; 2026 PureLock Privacy Suite. All rights reserved. Designed for absolute user privacy.
+        </footer>
+    </div>
+</body>
+</html>
