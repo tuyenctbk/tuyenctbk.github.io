@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - P2P Connect</title>
+    <style>
+        :root {
+            --primary-color: #0066cc;
+            --text-color: #2c3e50;
+            --bg-color: #f8f9fa;
+            --card-bg: #ffffff;
+            --border-color: #e9ecef;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            border: 1px solid var(--border-color);
+        }
+
+        h1 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 12px;
+            margin-top: 0;
+        }
+
+        h2 {
+            color: #333;
+            margin-top: 28px;
+            font-size: 1.3rem;
+        }
+
+        p, li {
+            font-size: 1rem;
+            color: #4a5568;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        .highlight-box {
+            background-color: #eef6ff;
+            border-left: 4px solid var(--primary-color);
+            padding: 16px;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
+            font-size: 0.9rem;
+            color: #718096;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Privacy Policy</h1>
+    <p><strong>Effective Date:</strong> August 13, 2026</p>
+    <p><strong>App Name:</strong> P2P Connect</p>
+
+    <div class="highlight-box">
+        <strong>Summary:</strong> <strong>P2P Connect</strong> operates as a completely decentralized, serverless local peer-to-peer (P2P) application. Your communications, files, and personal data are never routed through or stored on any central servers or external third-party infrastructure.
+    </div>
+
+    <h2>1. Information We Do Not Collect</h2>
+    <p>Because P2P Connect operates directly over your local area network (LAN) / Wi-Fi network:</p>
+    <ul>
+        <li><strong>No Account Creation:</strong> We do not require registration, phone numbers, email addresses, or user profiles.</li>
+        <li><strong>No Central Data Storage:</strong> Messages, shared media, and files are transferred directly between peer devices and stored locally on your device.</li>
+        <li><strong>No External Tracking:</strong> We do not use third-party analytics, tracking SDKs, or ad networks to monitor your usage.</li>
+    </ul>
+
+    <h2>2. Data Handled On Your Device & Local Network</h2>
+    <p>To deliver local peer-to-peer functionality, the app processes the following data locally on your network:</p>
+    <ul>
+        <li><strong>Local Network Identifying Info:</strong> Local IP addresses and chosen display nicknames are broadcasted locally over Network Service Discovery (NSD) or UDP to discover nearby peers on the same Wi-Fi connection.</li>
+        <li><strong>Chat Messages & Shared Media:</strong> Transmitted directly over encrypted socket connections between connected peer devices.</li>
+        <li><strong>Local Storage:</strong> All chat logs, settings, and media files are stored strictly on your local device storage using encrypted database mechanisms.</li>
+    </ul>
+
+    <h2>3. Device Permissions Used</h2>
+    <p>P2P Connect requests specific Android permissions solely to enable core features:</p>
+    <ul>
+        <li><strong>Local Network / Wi-Fi Access:</strong> Required to discover local peers, open communication sockets, and transfer messages/files directly.</li>
+        <li><strong>Camera Permission:</strong> Required only when scanning a peer's QR code to initiate local device pairing.</li>
+        <li><strong>Storage / Media Access:</strong> Required to pick and send images, documents, or media files to connected local peers.</li>
+    </ul>
+
+    <h2>4. Data Security</h2>
+    <p>We prioritize local data security through technical safeguards:</p>
+    <ul>
+        <li><strong>Local Database Encryption:</strong> Chat logs stored locally are protected using encrypted local storage engines.</li>
+        <li><strong>Encrypted Transfers:</strong> Peer-to-peer communication channels utilize cryptographic key exchanges (ECDH / AES encryption) to prevent local network packet interception.</li>
+    </ul>
+
+    <h2>5. Data Control & Deletion</h2>
+    <p>Since all data resides on your device, you retain full ownership and control:</p>
+    <ul>
+        <li>You can delete individual messages, peer pairings, or chat logs directly within the app at any time.</li>
+        <li>Clearing the app’s data or uninstalling the app permanently erases all local database records and stored files.</li>
+    </ul>
+
+    <h2>6. Changes to This Privacy Policy</h2>
+    <p>We may update our Privacy Policy from time to time to reflect app updates. Any updates will be posted on this page with an updated effective date.</p>
+
+    <h2>7. Contact Us</h2>
+    <p>If you have questions or feedback regarding this Privacy Policy, please contact us at:</p>
+    <p><strong>Email:</strong> <a href="mailto:support@example.com">support@example.com</a></p>
+
+    <div class="footer">
+        &copy; 2026 P2P Connect. All rights reserved.
+    </div>
+</div>
+
+</body>
+</html>
