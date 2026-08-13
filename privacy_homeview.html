@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - HomeView</title>
+    <style>
+        :root {
+            --bg: #0F172A;
+            --card: #1E293B;
+            --primary: #0EA5E9;
+            --text: #F8FAFC;
+            --muted: #94A3B8;
+            --border: #334155;
+        }
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            margin: 0;
+            padding: 32px 16px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .container {
+            width: 100%;
+            max-width: 720px;
+            background: var(--card);
+            border-radius: 16px;
+            padding: 40px;
+            box-shadow: 0 10px 25px -5px rgba(0,0,0,0.3);
+            border: 1px solid var(--border);
+            line-height: 1.6;
+        }
+        h1 {
+            font-size: 28px;
+            margin-top: 0;
+            margin-bottom: 12px;
+            color: var(--text);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            border-bottom: 2px solid var(--border);
+            padding-bottom: 16px;
+        }
+        h2 {
+            font-size: 20px;
+            color: var(--primary);
+            margin-top: 28px;
+            margin-bottom: 12px;
+        }
+        p {
+            color: #E2E8F0;
+            font-size: 16px;
+            margin-bottom: 16px;
+        }
+        ul {
+            padding-left: 24px;
+            margin-bottom: 20px;
+        }
+        li {
+            color: #E2E8F0;
+            margin-bottom: 10px;
+            font-size: 15px;
+        }
+        .badge {
+            background: rgba(14, 165, 233, 0.1);
+            color: var(--primary);
+            padding: 4px 10px;
+            border-radius: 6px;
+            font-size: 13px;
+            font-weight: bold;
+        }
+        .footer {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 13px;
+            color: var(--muted);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🛡️ HomeView Privacy Policy <span class="badge">Official</span></h1>
+        <p><em>Last Updated: August 12, 2026</em></p>
+        
+        <p>Welcome to <strong>HomeView</strong>. Your privacy and the security of your smart home network are our highest priorities. This Privacy Policy outlines how HomeView handles camera feeds, local streaming parameters, device credentials, and diagnostic logs.</p>
+        
+        <h2>1. 100% Offline & Zero Cloud Data Collection</h2>
+        <p>HomeView operates on a strict <strong>local-first, offline architecture</strong>:</p>
+        <ul>
+            <li><strong>No External Telemetry</strong>: All RTSP/MJPEG camera URLs, access credentials, local IP addresses, and motion detection logs are processed exclusively on your local device.</li>
+            <li><strong>No Cloud Storage</strong>: Video feeds, snapshots, and automation configurations are never uploaded, routed, or transmitted to remote cloud servers.</li>
+            <li><strong>No User Accounts</strong>: We do not require registration, login credentials, or personal identifiers. Your data remains entirely under your sovereignty.</li>
+        </ul>
+
+        <h2>2. Local Network Communication & Permissions</h2>
+        <p>To enable seamless multi-camera grid monitoring and remote configuration beams, the application utilizes specific local network permissions:</p>
+        <ul>
+            <li><strong>Local Network Access</strong>: Required solely to play RTSP and MJPEG camera streams from your local IP cameras and NVRs within your secure Wi-Fi network.</li>
+            <li><strong>Local Configuration Web Server</strong>: The app securely hosts a lightweight HTTP service on port 8080 when triggered, allowing you to beam camera configurations from your phone or laptop browser directly to your TV. No internet data is routed through this socket.</li>
+            <li><strong>Secure On-Device Database</strong>: All camera slots, layout indexes, and light integrations are stored securely using encrypted local Room/SQLite databases on your device.</li>
+        </ul>
+
+        <h2>3. Third-Party Smart Home Integrations</h2>
+        <p>HomeView may optionally connect to local smart home hubs (such as Philips Hue bridges) via local API requests. All authentication keys and tokens are stored securely in Android-sandboxed local storage and are never shared with external parties.</p>
+
+        <h2>4. Compliance & Contact</h2>
+        <p>This policy complies with stringent global data protection standards (GDPR, CCPA). If you have any questions or security inquiries regarding HomeView, please contact your local system administrator or open an issue on the project repository.</p>
+    </div>
+    <div class="footer">
+        HomeView v1.0 • Designed for Ultimate Privacy & Security
+    </div>
+</body>
+</html>
