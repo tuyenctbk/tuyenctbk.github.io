@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Deeply Focus Companion</title>
+    <style>
+        :root {
+            --bg-color: #0d0d11;
+            --card-bg: #161622;
+            --text-primary: #f3f4f6;
+            --text-secondary: #9ca3af;
+            --accent-blue: #06b6d4;
+            --accent-indigo: #6366f1;
+            --border-color: #27273a;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .app-logo {
+            font-size: 2.5rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, var(--accent-blue), var(--accent-indigo));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 10px;
+            letter-spacing: -0.05em;
+        }
+
+        .subtitle {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+            margin-top: 0;
+        }
+
+        .last-updated {
+            font-size: 0.85rem;
+            color: var(--accent-blue);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            color: #ffffff;
+            margin-top: 30px;
+            border-left: 4px solid var(--accent-indigo);
+            padding-left: 12px;
+        }
+
+        p, ul, li {
+            color: var(--text-secondary);
+            font-size: 1rem;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 24px;
+            margin-top: 20px;
+        }
+
+        .card h3 {
+            margin-top: 0;
+            color: var(--accent-blue);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+
+        a {
+            color: var(--accent-blue);
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        a:hover {
+            color: var(--accent-indigo);
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="app-logo">DEEPLY</div>
+            <p class="subtitle">Premium Offline-First Focus & Meditation Companion</p>
+            <div class="last-updated">Last Updated: August 2026</div>
+        </header>
+
+        <section>
+            <p>At <strong>Deeply</strong>, we believe that your mind is your own private sanctuary. Your ability to concentrate, focus, and meditate should not come at the cost of your digital privacy. This Privacy Policy outlines exactly how our offline-first application handles your information.</p>
+        </section>
+
+        <div class="card">
+            <h3>🔒 Absolute Offline Privacy Guarantee</h3>
+            <p>Deeply is built as an <strong>offline-first application</strong>. We do not maintain remote cloud databases, we do not require user account registration, and we do not transmit your local logs, focus performance records, or device state to any external web servers.</p>
+        </div>
+
+        <section>
+            <h2>1. Collection & Processing of Data</h2>
+            <p>All data processed by Deeply remains exclusively on your physical device. Specifically, the application utilizes:</p>
+            <ul>
+                <li><strong>Local SQLite Database (Room Persistence):</strong> Your historical session goals, distraction counts, and focus durations are stored entirely on your device's local sandboxed memory.</li>
+                <li><strong>Physical Sensor Access (Accelerometer):</strong> In-memory accelerometer processing is utilized solely to trigger local <em>Focus Leak</em> alerts when the phone is physically moved or disturbed. This telemetric feedback is processed locally in real-time and is never logged or exported.</li>
+                <li><strong>WearOS / Biometric Emulation:</strong> Local simulated pulse scales and Heart Rate synchronizations are calculated strictly in-memory on the local device runtime to visualize biometric biofeedback loops during breathing exercises.</li>
+            </ul>
+
+            <h2>2. No Third-Party Selling or Sharing</h2>
+            <p>Because we do not collect or upload your focus logs, we do not have access to your private information. Consequently:</p>
+            <ul>
+                <li>We do not sell, rent, or trade your data to third-party brokers or advertisers.</li>
+                <li>We do not utilize third-party analytics SDKs that track behavioral telemetry outside your application sandbox.</li>
+                <li>Your settings (including <em>Night Shift Circadian preferences</em> and localized language choices) are stored locally in Android SharedPreferences.</li>
+            </ul>
+
+            <h2>3. Android Permissions Usage</h2>
+            <p>Deeply declares permissions to support physical feedback and seamless integration:</p>
+            <ul>
+                <li><strong>VIBRATE:</strong> Used solely to pulse the device's tactile engine in rhythm with the 60 BPM breathing guides.</li>
+                <li><strong>WIFI_MULTICAST:</strong> Utilized exclusively for local network service discovery (NSD) to link local focus displays within your private Wi-Fi network without passing through external servers.</li>
+            </ul>
+
+            <h2>4. Your Rights & Data Control</h2>
+            <p>Since all data remains in your custody, you have full sovereignty over your information:</p>
+            <ul>
+                <li>You can clear your entire history of focus sessions directly inside the application's local settings.</li>
+                <li>Uninstalling the application from your device automatically deletes all sandboxed databases and preferences permanently.</li>
+            </ul>
+
+            <h2>5. Contact Us</h2>
+            <p>If you have any questions or feedback regarding our commitment to high-privacy offline tools, please feel free to reach out:</p>
+            <p><strong>Email:</strong> <a href="mailto:tuyenctbk@gmail.com">tuyenctbk@gmail.com</a></p>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 Deeply. Built with complete offline-first architecture for absolute digital privacy.</p>
+        </footer>
+    </div>
+</body>
+</html>
