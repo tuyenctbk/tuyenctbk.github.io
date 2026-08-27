@@ -3,36 +3,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>One Screen - Official Website</title>
+    <title>SoloProno - Official Developer Website</title>
     <style>
-        body {font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 20px; background-color: #f9f9f9;}
-        header {text-align: center; padding: 40px 0; background: #fff; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);}
-        h1 {margin: 0; color: #1a73e8;}
-        .container {background: #fff; padding: 30px; margin-top: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);}
-        .app-list {list-style-type: none; padding: 0;}
-        .app-list li {margin: 15px 0;}
-        footer {text-align: center; margin-top: 40px; font-size: 0.9em; color: #666;}
-        a {color: #1a73e8; text-decoration: none; font-weight: bold;}
-        a:hover {text-decoration: underline;}
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        h1 {
+            margin: 0 0 10px;
+            color: #1a73e8;
+        }
+        .subtitle {
+            margin: 5px 0;
+            color: #555;
+            font-size: 1.05em;
+        }
+        .play-badge-link {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 8px 16px;
+            background-color: #1a73e8;
+            color: #fff !important;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background-color 0.2s ease;
+        }
+        .play-badge-link:hover {
+            background-color: #1557b0;
+            text-decoration: none;
+        }
+        .container {
+            background: #fff;
+            padding: 30px;
+            margin-top: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        .app-grid {
+            list-style-type: none;
+            padding: 0;
+            margin: 20px 0 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+            gap: 12px;
+        }
+        .app-grid li a {
+            display: flex;
+            align-items: center;
+            padding: 12px 16px;
+            background: #f8f9fa;
+            border: 1px solid #e8eaed;
+            border-radius: 6px;
+            color: #202124;
+            text-decoration: none;
+            font-weight: 500;
+            transition: border-color 0.2s, background-color 0.2s;
+        }
+        .app-grid li a:hover {
+            background-color: #f1f3f4;
+            border-color: #1a73e8;
+            color: #1a73e8;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #666;
+        }
+        a {
+            color: #1a73e8;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>One Screen</h1>
-        <p>Mobile & Android TV Applications</p>
+        <h1>SoloProno</h1>
+        <p class="subtitle">Official developer website for Mobile & Android TV applications</p>
+        <a class="play-badge-link" href="https://play.google.com/store/apps/developer?id=SoloProno" target="_blank" rel="noopener noreferrer">
+            View SoloProno on Google Play
+        </a>
     </header>
+
     <div class="container">
-        <h2>Our Apps</h2>
-        <ul class="app-list">
-            <li><a href="https://play.google.com/store/apps/details?id=com.aetherscreen">AetherScreen</a></li>
-            <li><a href="https://play.google.com/store/apps/details?id=com.tdpham.dpadarcade">Dpad Arcade</a></li>
-            <li><a href="https://play.google.com/store/apps/details?id=com.tdpham.navitvbrowser">NaviTV Browser</a></li>
-            <li><a href="https://play.google.com/store/apps/details?id=com.tdpham.brainyarcade">Brainy Arcade</a></li>
+        <h2>Published Applications</h2>
+        <ul class="app-grid">
+            <li><a href="https://play.google.com/store/apps/developer?id=SoloProno" target="_blank" rel="noopener noreferrer">Aura TV: Smart TV Launcher</a></li>
+            <li><a href="https://play.google.com/store/apps/developer?id=SoloProno" target="_blank" rel="noopener noreferrer">Brainy Arcade</a></li>
+            <li><a href="https://play.google.com/store/apps/developer?id=SoloProno" target="_blank" rel="noopener noreferrer">ClaimVault: Warranty</a></li>
+            <li><a href="https://play.google.com/store/apps/developer?id=SoloProno" target="_blank" rel="noopener noreferrer">ClipVault</a></li>
+            <li><a href="https://play.google.com/store/apps/developer?id=SoloProno" target="_blank" rel="noopener noreferrer">DoseFlow: Pill & Water Tracker</a></li>
+            <li><a href="https://play.google.com/store/apps/developer?id=SoloProno" target="_blank" rel="noopener noreferrer">Dpad Arcade: Retro Games</a></li>
+            <li><a href="https://play.google.com/store/apps/developer?id=SoloProno" target="_blank" rel="noopener noreferrer">FieldTrace: EMF Scanner Map</a></li>
+            <li><a href="https://play.google.com/store/apps/developer?id=SoloProno" target="_blank" rel="noopener noreferrer">FLOW: Focus & Mindfulness</a></li>
+            <li><a href="https://play.google.com/store/apps/developer?id=SoloProno" target="_blank" rel="noopener noreferrer">MotorSonar</a></li>
+            <li><a href="https://play.google.com/store/apps/developer?id=SoloProno" target="_blank" rel="noopener noreferrer">NaviTV Browser</a></li>
+            <li><a href="https://play.google.com/store/apps/developer?id=SoloProno" target="_blank" rel="noopener noreferrer">NeoTune: Radio & Podcasts</a></li>
+            <li><a href="https://play.google.com/store/apps/developer?id=SoloProno" target="_blank" rel="noopener noreferrer">P2P Connect - Direct Chat</a></li>
+            <li><a href="https://play.google.com/store/apps/developer?id=SoloProno" target="_blank" rel="noopener noreferrer">PDFCraft</a></li>
+            <li><a href="https://play.google.com/store/apps/developer?id=SoloProno" target="_blank" rel="noopener noreferrer">PlantPulse</a></li>
+            <li><a href="https://play.google.com/store/apps/developer?id=SoloProno" target="_blank" rel="noopener noreferrer">PureLock: Privacy App Lock</a></li>
+            <li><a href="https://play.google.com/store/apps/developer?id=SoloProno" target="_blank" rel="noopener noreferrer">Sift: High SNR News Radar</a></li>
+            <li><a href="https://play.google.com/store/apps/developer?id=SoloProno" target="_blank" rel="noopener noreferrer">SoundSlumber - Sleep Sounds</a></li>
+            <li><a href="https://play.google.com/store/apps/developer?id=SoloProno" target="_blank" rel="noopener noreferrer">System Doctor TV</a></li>
+            <li><a href="https://play.google.com/store/apps/developer?id=SoloProno" target="_blank" rel="noopener noreferrer">TuneZen - Instrument Tuner</a></li>
+            <li><a href="https://play.google.com/store/apps/developer?id=SoloProno" target="_blank" rel="noopener noreferrer">ZenFast</a></li>
         </ul>
     </div>
+
     <footer>
         <p><a href="privacy.html">Privacy Policy</a></p>
-        &copy; 2026 One Screen
+        <p>&copy; 2026 SoloProno. All rights reserved.</p>
     </footer>
 </body>
 </html>
