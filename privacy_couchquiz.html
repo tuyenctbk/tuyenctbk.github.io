@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - CouchQuiz: Local P2P Party Trivia</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #E2E8F0;
+            background-color: #0C0B16;
+            margin: 0;
+            padding: 24px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #141324;
+            padding: 32px;
+            border-radius: 16px;
+            border: 1px solid #1F1E38;
+            box-shadow: 0 8px 32px rgba(0, 240, 255, 0.08);
+        }
+        h1 {
+            color: #00F0FF;
+            font-size: 28px;
+            margin-bottom: 8px;
+            border-bottom: 2px solid #FF007F;
+            padding-bottom: 12px;
+        }
+        h2 {
+            color: #00F0FF;
+            font-size: 20px;
+            margin-top: 28px;
+        }
+        p, li {
+            color: #CBD5E1;
+            font-size: 15px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        .highlight {
+            background-color: rgba(0, 240, 255, 0.1);
+            border-left: 4px solid #00F0FF;
+            padding: 12px 16px;
+            border-radius: 4px;
+            margin: 16px 0;
+        }
+        .footer {
+            margin-top: 40px;
+            font-size: 13px;
+            color: #94A3B8;
+            border-top: 1px solid #1F1E38;
+            padding-top: 16px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Privacy Policy</h1>
+        <p><strong>Effective Date:</strong> October 16, 2026</p>
+        <p><strong>Application:</strong> CouchQuiz: Local P2P Party Trivia ("CouchQuiz", "we", "our")</p>
+
+        <div class="highlight">
+            <strong>Key Summary:</strong> CouchQuiz is designed with a strict zero-data collection architecture. All party gameplay communication occurs exclusively between your Android TV and connected mobile phones over your local home Wi-Fi network. We do not operate external gameplay servers, and we never collect, store, or transmit your personal data.
+        </div>
+
+        <h2>1. Information We Do Not Collect</h2>
+        <p>CouchQuiz does not require an account, username, email address, password, phone number, or payment information. Specifically:</p>
+        <ul>
+            <li><strong>No Personal Identifiers:</strong> We do not collect names, emails, addresses, or phone numbers. Player nicknames and chosen avatar emojis entered on mobile controllers exist only in device RAM for the duration of the active party session.</li>
+            <li><strong>No Location Data:</strong> We never request GPS or coarse/fine location access.</li>
+            <li><strong>No Media or Storage Access:</strong> We do not access photos, videos, contacts, or local device files.</li>
+            <li><strong>No Advertising or Tracking IDs:</strong> We do not include third-party advertising SDKs, analytics tracking beacons, or cross-app user trackers.</li>
+        </ul>
+
+        <h2>2. Local Wi-Fi Peer-to-Peer Networking</h2>
+        <p>CouchQuiz connects the Android TV Game Board and mobile phone controllers directly over your local Area Network (LAN):</p>
+        <ul>
+            <li><strong>UDP Discovery Beacons:</strong> The TV host broadcasts an anonymous beacon on your local subnet (port 8889) containing only the room code and local IP address so phones can auto-discover the lobby.</li>
+            <li><strong>Direct TCP Socket:</strong> Phones send buzzer presses and answer choices directly to the TV host on local port 8888. No traffic is routed through cloud relays or external game servers.</li>
+        </ul>
+
+        <h2>3. Third-Party Trivia APIs</h2>
+        <p>To provide high-quality party trivia questions, CouchQuiz retrieves public, non-personal trivia datasets from:</p>
+        <ul>
+            <li><strong>Open Trivia Database (opentdb.com)</strong></li>
+            <li><strong>RestCountries (restcountries.com)</strong></li>
+            <li><strong>PokeAPI (pokeapi.co)</strong></li>
+        </ul>
+        <p>These requests only fetch publicly available questions, country facts, and educational images. No user identifying information is ever included in these requests. When an internet connection is unavailable, CouchQuiz seamlessly operates using its built-in offline question bank.</p>
+
+        <h2>4. Device Permissions</h2>
+        <p>CouchQuiz requests only the minimal technical permissions required for its arcade party experience:</p>
+        <ul>
+            <li><code>android.permission.INTERNET</code>: To download public trivia questions and fetch clue images.</li>
+            <li><code>android.permission.ACCESS_NETWORK_STATE</code> &amp; <code>ACCESS_WIFI_STATE</code>: To detect local Wi-Fi connectivity and display your local IP address for easy connection.</li>
+            <li><code>android.permission.CHANGE_WIFI_MULTICAST_STATE</code>: To allow local UDP discovery beacons on home routers.</li>
+            <li><code>android.permission.VIBRATE</code>: To provide tactile haptic feedback when tapping buzzer buttons on mobile controllers.</li>
+        </ul>
+
+        <h2>5. Children's Privacy (COPPA Compliance)</h2>
+        <p>CouchQuiz is a family-friendly party game designed for players of all ages. Because we do not collect any personal data, CouchQuiz complies fully with the Children's Online Privacy Protection Act (COPPA) and Google Play Families Policy.</p>
+
+        <h2>6. Security</h2>
+        <p>Since your trivia sessions are strictly local to your private Wi-Fi network, your gameplay communications are contained within your home router's security boundaries and are never exposed to public internet endpoints.</p>
+
+        <h2>7. Changes to This Privacy Policy</h2>
+        <p>We may update this Privacy Policy from time to time. Any updates will be reflected within this document and updated inside the application.</p>
+
+        <h2>8. Contact Us</h2>
+        <p>If you have any questions or suggestions regarding this Privacy Policy, please contact the developer via Google Play Store developer contact channels.</p>
+
+        <div class="footer">
+            &copy; 2026 CouchQuiz. All rights reserved. Zero-Backend Local Party Trivia.
+        </div>
+    </div>
+</body>
+</html>
