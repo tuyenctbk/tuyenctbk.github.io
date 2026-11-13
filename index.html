@@ -126,4 +126,142 @@
             color: var(--text-secondary);
             padding: 8px 16px;
             border-radius: 20px;
-            cursor:
+            cursor: pointer;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: all 0.2s ease;
+        }
+
+        .filter-btn:hover,
+        .filter-btn.active {
+            background: var(--primary);
+            color: #fff;
+            border-color: var(--primary);
+        }
+
+        .app-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .app-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            margin-bottom: 12px;
+            width: fit-content;
+        }
+
+        .badge-tv { background: var(--badge-tv); color: var(--badge-tv-text); }
+        .badge-health { background: var(--badge-health); color: var(--badge-health-text); }
+        .badge-tools { background: var(--badge-tools); color: var(--badge-tools-text); }
+        .badge-games { background: var(--badge-games); color: var(--badge-games-text); }
+
+        .app-card h2 {
+            margin: 0 0 8px;
+            font-size: 1.25rem;
+        }
+
+        .app-card p {
+            margin: 0 0 20px;
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+
+        .app-link {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .app-link:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 48px;
+            padding-top: 24px;
+            border-top: 1px solid var(--border);
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>SoloProno</h1>
+        <p class="subtitle">Independent Android &amp; Android TV application studio crafting clean, reliable tools, health apps, and entertainment experiences.</p>
+        <div class="header-actions">
+            <a href="https://play.google.com/store" target="_blank" rel="noopener" class="play-badge-link">Google Play Store</a>
+            <a href="mailto:contact@example.com" class="contact-btn">Contact Support</a>
+        </div>
+    </header>
+
+    <div class="controls">
+        <div class="filter-group">
+            <button class="filter-btn active" onclick="filterApps('all', this)">All Apps</button>
+            <button class="filter-btn" onclick="filterApps('tv', this)">Android TV</button>
+            <button class="filter-btn" onclick="filterApps('health', this)">Health</button>
+            <button class="filter-btn" onclick="filterApps('tools', this)">Tools</button>
+            <button class="filter-btn" onclick="filterApps('games', this)">Games</button>
+        </div>
+    </div>
+
+    <main class="app-grid" id="appGrid">
+        <article class="app-card" data-category="tv">
+            <div>
+                <span class="badge badge-tv">Android TV</span>
+                <h2>Sample TV Utility</h2>
+                <p>Designed specifically for D-pad navigation and large screens with a lightweight interface.</p>
+            </div>
+            <a href="#" class="app-link">View on Google Play &rarr;</a>
+        </article>
+
+        <article class="app-card" data-category="tools">
+            <div>
+                <span class="badge badge-tools">Tools</span>
+                <h2>Sample Productivity Tool</h2>
+                <p>Fast, offline-first utility engineered for everyday Android devices.</p>
+            </div>
+            <a href="#" class="app-link">View on Google Play &rarr;</a>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 SoloProno. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function filterApps(category, btn) {
+            document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+
+            document.querySelectorAll('.app-card').forEach(card => {
+                if (category === 'all' || card.dataset.category === category) {
+                    card.style.display = 'flex';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+    </script>
+
+</body>
+</html>
