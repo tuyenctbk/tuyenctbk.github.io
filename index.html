@@ -56,10 +56,17 @@
         }
 
         .subtitle {
-            margin: 6px auto 20px;
+            margin: 6px auto 24px;
             color: var(--text-secondary);
             font-size: 1.1rem;
             max-width: 640px;
+        }
+
+        .header-actions {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
         }
 
         .play-badge-link {
@@ -77,6 +84,25 @@
 
         .play-badge-link:hover {
             background-color: var(--primary-hover);
+        }
+
+        .contact-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 24px;
+            background-color: var(--surface);
+            color: var(--primary);
+            border: 1px solid var(--border);
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 8px;
+            transition: background-color 0.2s ease, border-color 0.2s ease;
+        }
+
+        .contact-btn:hover {
+            background-color: #f1f6fe;
+            border-color: var(--primary);
         }
 
         .controls {
@@ -100,61 +126,4 @@
             color: var(--text-secondary);
             padding: 8px 16px;
             border-radius: 20px;
-            cursor: pointer;
-            font-size: 0.9rem;
-            font-weight: 500;
-            transition: all 0.15s ease;
-        }
-
-        .filter-btn:hover {
-            border-color: var(--primary);
-            color: var(--primary);
-        }
-
-        .filter-btn.active {
-            background: var(--primary);
-            color: #fff;
-            border-color: var(--primary);
-        }
-
-        .search-input {
-            padding: 10px 16px;
-            border: 1px solid var(--border);
-            border-radius: 8px;
-            font-size: 0.95rem;
-            min-width: 260px;
-            background: var(--surface);
-            color: var(--text-main);
-        }
-
-        .search-input:focus {
-            outline: none;
-            border-color: var(--primary);
-            box-shadow: 0 0 0 2px rgba(26, 115, 232, 0.2);
-        }
-
-        .stats-bar {
-            font-size: 0.9rem;
-            color: var(--text-secondary);
-            margin-bottom: 16px;
-        }
-
-        .apps-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-            gap: 20px;
-        }
-
-        .app-card {
-            background: var(--surface);
-            border: 1px solid var(--border);
-            border-radius: 12px;
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            transition: transform 0.15s ease, box-shadow 0.15s ease;
-        }
-
-        .app-card:hover {
-            transform: translate
+            cursor:
