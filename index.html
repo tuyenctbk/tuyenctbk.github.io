@@ -116,3 +116,171 @@
             border-radius: 8px;
             transition: background-color 0.2s ease, border-color 0.2s ease;
         }
+
+        .contact-btn:hover {
+            background-color: #f1f3f4;
+            border-color: #c6c9cc;
+        }
+
+        .section-title {
+            font-size: 1.35rem;
+            margin: 0 0 16px;
+            color: var(--text-main);
+        }
+
+        .apps-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            margin-bottom: 36px;
+        }
+
+        .app-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 22px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+            transition: transform 0.15s ease, box-shadow 0.15s ease;
+        }
+
+        .app-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        .badge {
+            display: inline-block;
+            font-size: 0.78rem;
+            font-weight: 600;
+            padding: 3px 10px;
+            border-radius: 999px;
+            margin-bottom: 12px;
+            width: fit-content;
+        }
+
+        .badge-tv { background: var(--badge-tv); color: var(--badge-tv-text); }
+        .badge-health { background: var(--badge-health); color: var(--badge-health-text); }
+        .badge-tools { background: var(--badge-tools); color: var(--badge-tools-text); }
+        .badge-games { background: var(--badge-games); color: var(--badge-games-text); }
+        .badge-lifestyle { background: var(--badge-lifestyle); color: var(--badge-lifestyle-text); }
+
+        .app-card h3 {
+            margin: 0 0 8px;
+            font-size: 1.15rem;
+            color: var(--text-main);
+        }
+
+        .app-card p {
+            margin: 0 0 18px;
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+        }
+
+        .app-link {
+            color: var(--primary);
+            font-weight: 600;
+            font-size: 0.92rem;
+            text-decoration: none;
+        }
+
+        .app-link:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 24px 16px;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            border-top: 1px solid var(--border);
+        }
+
+        footer a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="publisher-tag">Google Play App Publisher</div>
+        <h1>Solo<span>Prono</span></h1>
+        <p class="subtitle">
+            Official developer portfolio of Pham Duc Tuyen — building useful Android &amp; Android TV applications across entertainment, health, tools, lifestyle, and casual games.
+        </p>
+        <div class="header-actions">
+            <a class="play-badge-link" href="https://play.google.com/store/apps/dev?id=YOUR_DEVELOPER_ID" target="_blank" rel="noopener noreferrer">
+                View on Google Play
+            </a>
+            <a class="contact-btn" href="mailto:contact@yourdomain.com">
+                Contact Developer
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <h2 class="section-title">Featured Applications</h2>
+        <div class="apps-grid">
+            <article class="app-card">
+                <div>
+                    <span class="badge badge-tv">Android TV</span>
+                    <h3>Smart TV Utility</h3>
+                    <p>Seamless big-screen experience designed for Android TV remotes and living room entertainment.</p>
+                </div>
+                <a class="app-link" href="https://play.google.com/store/apps" target="_blank" rel="noopener noreferrer">Get it on Google Play &rarr;</a>
+            </article>
+
+            <article class="app-card">
+                <div>
+                    <span class="badge badge-tools">Tools</span>
+                    <h3>Productivity &amp; System Tools</h3>
+                    <p>Lightweight, fast, and reliable utilities crafted to simplify everyday mobile workflows.</p>
+                </div>
+                <a class="app-link" href="https://play.google.com/store/apps" target="_blank" rel="noopener noreferrer">Get it on Google Play &rarr;</a>
+            </article>
+
+            <article class="app-card">
+                <div>
+                    <span class="badge badge-health">Health &amp; Fitness</span>
+                    <h3>Daily Wellness Tracker</h3>
+                    <p>Simple habit and wellness tracking built to help you stay consistent every day.</p>
+                </div>
+                <a class="app-link" href="https://play.google.com/store/apps" target="_blank" rel="noopener noreferrer">Get it on Google Play &rarr;</a>
+            </article>
+
+            <article class="app-card">
+                <div>
+                    <span class="badge badge-lifestyle">Lifestyle</span>
+                    <h3>Everyday Companion</h3>
+                    <p>Clean, intuitive mobile tools tailored for daily routines and personal organization.</p>
+                </div>
+                <a class="app-link" href="https://play.google.com/store/apps" target="_blank" rel="noopener noreferrer">Get it on Google Play &rarr;</a>
+            </article>
+
+            <article class="app-card">
+                <div>
+                    <span class="badge badge-games">Games</span>
+                    <h3>Casual Arcade</h3>
+                    <p>Quick, engaging offline-friendly games built for smooth performance on all devices.</p>
+                </div>
+                <a class="app-link" href="https://play.google.com/store/apps" target="_blank" rel="noopener noreferrer">Get it on Google Play &rarr;</a>
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 SoloProno &bull; Pham Duc Tuyen. All rights reserved.</p>
+        <p><a href="privacy-policy.html">Privacy Policy</a></p>
+    </footer>
+
+</body>
+</html>
