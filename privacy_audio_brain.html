@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - AudioBrain</title>
+  <style>
+    :root {
+      --primary: #2563eb;
+      --primary-dark: #1d4ed8;
+      --text: #1e293b;
+      --text-muted: #64748b;
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --border: #e2e8f0;
+      --badge-bg: #eff6ff;
+      --badge-text: #1d4ed8;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --primary: #3b82f6;
+        --primary-dark: #60a5fa;
+        --text: #f1f5f9;
+        --text-muted: #94a3b8;
+        --bg: #0f172a;
+        --card-bg: #1e293b;
+        --border: #334155;
+        --badge-bg: #1e3a8a;
+        --badge-text: #93c5fd;
+      }
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+      padding: 2rem 1rem;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: var(--card-bg);
+      padding: 2.5rem;
+      border-radius: 1rem;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+      border: 1px solid var(--border);
+    }
+    header {
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    .badge {
+      display: inline-block;
+      font-size: 0.8rem;
+      font-weight: 600;
+      padding: 0.25rem 0.75rem;
+      border-radius: 9999px;
+      background: var(--badge-bg);
+      color: var(--badge-text);
+      margin-bottom: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    h1 {
+      font-size: 2.25rem;
+      font-weight: 800;
+      color: var(--text);
+      margin-bottom: 0.5rem;
+    }
+    .meta {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+    h2 {
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: var(--text);
+      margin: 2rem 0 0.75rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    h3 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin: 1.25rem 0 0.5rem;
+    }
+    p {
+      margin-bottom: 1rem;
+      color: var(--text);
+    }
+    ul {
+      margin-left: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    li {
+      margin-bottom: 0.5rem;
+    }
+    .highlight-box {
+      background: var(--badge-bg);
+      border-left: 4px solid var(--primary);
+      padding: 1rem 1.25rem;
+      border-radius: 0 0.5rem 0.5rem 0;
+      margin: 1.5rem 0;
+      font-size: 0.95rem;
+    }
+    a {
+      color: var(--primary);
+      text-decoration: underline;
+    }
+    a:hover {
+      color: var(--primary-dark);
+    }
+    footer {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border);
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <span class="badge">Legal &amp; Privacy Compliance</span>
+      <h1>Privacy Policy</h1>
+      <div class="meta">
+        <strong>App:</strong> AudioBrain (<code>com.soloprono.audiobrain</code>)<br>
+        <strong>Effective Date:</strong> November 15, 2026<br>
+        <strong>Last Updated:</strong> November 15, 2026
+      </div>
+    </header>
+
+    <div class="highlight-box">
+      <strong>Summary:</strong> AudioBrain is an AI-powered voice note, summarization, and fact-checking application. Your voice recordings and generated notes belong to you. We do not sell your personal data, nor do we use your private voice recordings to train public AI models.
+    </div>
+
+    <h2>1. Introduction</h2>
+    <p>
+      This Privacy Policy explains how <strong>AudioBrain</strong> ("we", "our", or "the App") collects, uses, stores, and protects information when you use our mobile application on Android. We are committed to transparency and respecting your digital privacy.
+    </p>
+
+    <h2>2. Information We Collect and Process</h2>
+
+    <h3>A. Audio Recordings &amp; Microphone Data</h3>
+    <p>
+      AudioBrain captures voice input via your device's microphone solely when you initiate a recording:
+    </p>
+    <ul>
+      <li><strong>Microphone Permission (<code>RECORD_AUDIO</code>, <code>FOREGROUND_SERVICE_MICROPHONE</code>):</strong> Used exclusively to record your memos, meetings, lectures, or thoughts.</li>
+      <li><strong>Temporary Local Storage:</strong> Audio is temporarily saved locally on your device in standard audio format (e.g., AAC/M4A) for processing.</li>
+      <li><strong>Zero Background Wiretapping:</strong> AudioBrain never accesses your microphone without explicit user action or when recording has been stopped.</li>
+    </ul>
+
+    <h3>B. Text Notes, Transcripts &amp; AI-Generated Content</h3>
+    <p>
+      When your voice recording is processed, our service generates:
+    </p>
+    <ul>
+      <li>Cleaned transcripts (filtering filler words, noise tags, and stutters).</li>
+      <li>Structured summaries, key decisions, and action items.</li>
+      <li>Study flashcards and cross-note synthesis digests.</li>
+      <li>Fact-check queries and verification sources.</li>
+    </ul>
+
+    <h3>C. User Account &amp; Authentication Information</h3>
+    <ul>
+      <li><strong>Guest Mode:</strong> You can use AudioBrain without creating an account. In Guest Mode, your data is processed locally in memory on your device.</li>
+      <li><strong>Signed-In Users (Firebase Authentication / Google Sign-In):</strong> If you choose to sign in, we collect your unique user identifier (UID), name, and email address to authenticate your session and sync your encrypted notes across devices.</li>
+    </ul>
+
+    <h3>D. Usage, Quota &amp; Device Information</h3>
+    <p>
+      To prevent service abuse and manage free-tier access, we track feature usage metrics (such as daily transcript counts, AI digest usage, and quota reset timestamps) stored in Firebase Firestore and cached locally in SharedPreferences.
+    </p>
+
+    <h2>3. How We Use Artificial Intelligence &amp; Cloud Services</h2>
+    <p>
+      To provide features like smart transcription, noise cleanup, structured summaries, and fact-checking, AudioBrain securely interfaces with industry-standard AI cloud services:
+    </p>
+    <ul>
+      <li><strong>Google Cloud &amp; Google Gemini API / Vertex AI:</strong> Used to transcribe audio, summarize text, extract action items, and synthesize multi-note digests. Data transmitted via API is encrypted in transit (TLS/HTTPS).</li>
+      <li><strong>Google Search Grounding:</strong> Factual claims detected in your memos can be cross-referenced with live Google Search results to surface source citations and verification ratings. Only the specific query string is verified.</li>
+    </ul>
+
+    <h2>4. Third-Party Service Providers</h2>
+    <p>
+      We rely on trusted third-party providers strictly to facilitate the application’s functionality:
+    </p>
+    <ul>
+      <li><strong>Google Play Services:</strong> In-app billing, app delivery, and security integrity. (<a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>)</li>
+      <li><strong>Firebase Authentication &amp; Cloud Firestore:</strong> User identity management and cloud database synchronization. (<a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Privacy Policy</a>)</li>
+    </ul>
+
+    <h2>5. Data Retention, Control &amp; Deletion</h2>
+    <p>You retain full ownership and control over your data at all times:</p>
+    <ul>
+      <li><strong>In-App Deletion:</strong> You can delete any note, action item, flashcard, or fact-check history item directly within the app at any time. Deletions take effect immediately.</li>
+      <li><strong>Local Cache Clearing:</strong> In Guest Mode, data is cleared when the app is uninstalled or app storage is cleared.</li>
+      <li><strong>Account &amp; Cloud Data Wipe:</strong> You may request complete erasure of your cloud account and all associated notes and quota history at any time by contacting us at the email listed below or using the in-app account options.</li>
+    </ul>
+
+    <h2>6. Security</h2>
+    <p>
+      We employ rigorous industry-standard safeguards to protect your personal data. All communications between the AudioBrain mobile app and cloud backends use Transport Layer Security (TLS 1.2+ / HTTPS). Access to cloud storage collections is governed by authenticated Firestore Security Rules.
+    </p>
+
+    <h2>7. Children's Privacy</h2>
+    <p>
+      AudioBrain is not intended for use by children under the age of 13. We do not knowingly collect personal identifiable information from children under 13. If you become aware that a child has provided us with personal information, please contact us immediately.
+    </p>
+
+    <h2>8. Changes to This Privacy Policy</h2>
+    <p>
+      We may update our Privacy Policy from time to time. Any modifications will be reflected on this page with an updated "Last Updated" timestamp. We encourage you to review this policy periodically.
+    </p>
+
+    <h2>9. Contact Us</h2>
+    <p>
+      If you have questions, feedback, or requests regarding this Privacy Policy or your personal data, please contact:
+    </p>
+    <ul>
+      <li><strong>Developer / Publisher:</strong> SoloProno</li>
+      <li><strong>App Name:</strong> AudioBrain</li>
+      <li><strong>Package Name:</strong> <code>com.soloprono.audiobrain</code></li>
+      <li><strong>Support Email:</strong> <a href="mailto:support@soloprono.com">support@soloprono.com</a></li>
+    </ul>
+
+    <footer>
+      &copy; 2026 SoloProno. All rights reserved. &bull; AudioBrain for Android
+    </footer>
+  </div>
+</body>
+</html>
