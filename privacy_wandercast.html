@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WanderCast – Privacy Policy</title>
+  <style>
+    :root {
+      --bg-primary: #0d1219;
+      --bg-card: #151e29;
+      --accent-amber: #f5a623;
+      --accent-teal: #38d399;
+      --text-main: #f3f6fa;
+      --text-muted: #a9b6c7;
+      --border-subtle: #253447;
+    }
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      padding: 24px 16px 48px;
+      background-color: var(--bg-primary);
+      color: var(--text-main);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.65;
+    }
+    .container {
+      max-width: 840px;
+      margin: 0 auto;
+    }
+    .header-card {
+      background: linear-gradient(145deg, #192434, #121a24);
+      border: 1px solid var(--accent-amber);
+      border-radius: 18px;
+      padding: 24px;
+      margin-bottom: 20px;
+    }
+    .badge {
+      display: inline-block;
+      background: rgba(245, 166, 35, 0.16);
+      color: var(--accent-amber);
+      border: 1px solid rgba(245, 166, 35, 0.45);
+      border-radius: 8px;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.7px;
+      padding: 4px 10px;
+      text-transform: uppercase;
+    }
+    h1 {
+      margin: 12px 0 6px;
+      font-size: 28px;
+      color: #ffffff;
+    }
+    h2 {
+      margin-top: 0;
+      font-size: 19px;
+      color: var(--accent-amber);
+    }
+    .section-card {
+      background-color: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 16px;
+      padding: 20px 22px;
+      margin-bottom: 16px;
+    }
+    p, li {
+      color: var(--text-muted);
+      font-size: 15px;
+    }
+    strong {
+      color: var(--text-main);
+    }
+    ul {
+      padding-left: 20px;
+      margin: 10px 0;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 12px;
+      font-size: 14px;
+    }
+    th, td {
+      border: 1px solid var(--border-subtle);
+      padding: 10px 12px;
+      text-align: left;
+      vertical-align: top;
+    }
+    th {
+      background-color: rgba(56, 211, 153, 0.12);
+      color: var(--accent-teal);
+      font-weight: 700;
+    }
+    td {
+      color: var(--text-muted);
+    }
+    .footer {
+      text-align: center;
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-top: 28px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header-card">
+      <span class="badge">99.1 FM • WDR-CAST • GOOGLE PLAY PRIVACY DISCLOSURE</span>
+      <h1>WanderCast Privacy Policy</h1>
+      <p>
+        <strong>Application Name:</strong> WanderCast: AI Walk Audio Tour<br />
+        <strong>Package Identifier:</strong> <code>com.aistudio.wandercast.kxmpzq</code><br />
+        <strong>Effective Date:</strong> November 21, 2026 &nbsp;|&nbsp; <strong>Last Updated:</strong> November 21, 2026
+      </p>
+      <p>
+        WanderCast ("we", "our", or "the App") is an AI-powered GPS walking tour and neighborhood radio documentary application.
+        We design WanderCast with a <strong>local-first, privacy-by-design architecture</strong> where your walk history,
+        audio documentary archive, unlocked digital badges, and app event logs remain stored locally on your device in an on-device SQLite (Room) database.
+      </p>
+    </div>
+
+    <div class="section-card">
+      <h2>1. Summary of Data We Access &amp; Why</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Data Category</th>
+            <th>Android Permission / API</th>
+            <th>Purpose &amp; Storage Location</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Precise &amp; Approximate Location</strong></td>
+            <td><code>ACCESS_FINE_LOCATION</code><br /><code>ACCESS_COARSE_LOCATION</code><br /><code>FOREGROUND_SERVICE_LOCATION</code></td>
+            <td>Detects street block transitions and geofence checkpoints during your walk to trigger localized 60-second radio documentaries and adaptive low-battery (&lt;20%) GPS polling. Completed walk routes are saved locally on your device in Room DB.</td>
+          </tr>
+          <tr>
+            <td><strong>User-Selected Photos (Zero-Permission Photo Picker)</strong></td>
+            <td><code>ActivityResultContracts.PickVisualMedia</code></td>
+            <td>Only when you explicitly tap "Scan Photo" on the Facade &amp; Plaque Vision Scanner, your chosen image is sent to Google Gemini Vision via Firebase AI Logic to generate an architectural commentary. We never request broad media or storage permissions.</td>
+          </tr>
+          <tr>
+            <td><strong>Walk History, Badges &amp; App Event Telemetry</strong></td>
+            <td>On-Device Android Room SQLite Database</td>
+            <td>Stores completed walk routes, documentary transcripts, unlocked explorer badges (e.g., Early Bird, Marathoner), and anti-fatigue prompt cooldown counters strictly on your device. You can delete routes, episodes, or event logs at any time inside the app.</td>
+          </tr>
+          <tr>
+            <td><strong>Battery Level &amp; Power State</strong></td>
+            <td><code>BatteryManager</code> / <code>ACTION_BATTERY_CHANGED</code></td>
+            <td>Read locally in real time to automatically engage Battery-Saving Mode when device battery drops below 20% (reducing GPS polling frequency from 4s to 18s and throttling map tile refresh rates). Never transmitted off-device.</td>
+          </tr>
+          <tr>
+            <td><strong>Optional User-Provided API Key (BYOK)</strong></td>
+            <td>On-Device <code>SharedPreferences</code></td>
+            <td>If you optionally enter a personal Gemini API key in the Smart Quota panel, it is stored locally on your device and used only to authenticate your direct requests to Google's Generative Language API. You can clear it with one tap.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="section-card">
+      <h2>2. Location Data &amp; Foreground Walk Service</h2>
+      <ul>
+        <li><strong>Real-Time Geofence Detection:</strong> WanderCast uses your device's GPS coordinates while the app is open (or while you explicitly enable the Foreground Walk Service notification) to determine your current street block and proximity to historical checkpoints.</li>
+        <li><strong>Visible Foreground Notification:</strong> When background walk tracking is toggled on, WanderCast displays a persistent notification (<em>"99.1 FM • WanderCast Walking Guide"</em>) with an instant <strong>"Stop Walk"</strong> action so you remain in full control at all times.</li>
+        <li><strong>Adaptive Battery Protection:</strong> When your device battery falls below 20%, WanderCast automatically switches to Balanced Power GPS polling (18-second intervals, 28-meter displacement) and throttles map tile refreshes to conserve battery life.</li>
+        <li><strong>No Sale or Advertising Tracking:</strong> We never sell, rent, or share your GPS coordinates with advertising networks or data brokers.</li>
+      </ul>
+    </div>
+
+    <div class="section-card">
+      <h2>3. Artificial Intelligence &amp; Third-Party Services</h2>
+      <p>To synthesize localized neighborhood documentaries, walking routes, and map tiles, WanderCast interacts with the following services only when needed:</p>
+      <ul>
+        <li><strong>Google Firebase AI Logic &amp; Gemini Models:</strong> Street block names, approximate coordinates, and user-submitted questions or landmark photos are sent over encrypted HTTPS (TLS) to generate documentary scripts, trivia questions, and architectural analysis. App integrity is verified via <strong>Firebase App Check</strong>.</li>
+        <li><strong>Android On-Device Text-to-Speech (TTS):</strong> Voice narration is synthesized locally on your device using Android's built-in <code>TextToSpeech</code> engine (0 cloud audio streaming cost and 0 voice recording collection).</li>
+        <li><strong>Interactive Map Tiles:</strong> The Tour Summary route preview loads map tiles from OpenStreetMap, CartoDB, or Esri over HTTPS, or renders 100% offline using the built-in Vector Topographic Radar canvas.</li>
+      </ul>
+    </div>
+
+    <div class="section-card">
+      <h2>4. Data Retention, User Control &amp; Deletion</h2>
+      <ul>
+        <li><strong>100% On-Device Control:</strong> All recorded episodes, walk routes, unlocked digital badges, and app event logs are stored locally on your device.</li>
+        <li><strong>In-App Deletion:</strong> You can delete individual episodes or completed walk routes in the <em>Archive (Field Tapes)</em> tab, clear logged app events in the <em>Rewards &amp; Telemetry</em> tab, or remove your optional BYOK key at any time.</li>
+        <li><strong>Complete Erasure:</strong> Uninstalling WanderCast or clearing the app's storage in Android Settings permanently erases all local Room database tables and preferences.</li>
+      </ul>
+    </div>
+
+    <div class="section-card">
+      <h2>5. Children's Privacy &amp; Policy Updates</h2>
+      <p>
+        WanderCast is a general-audience urban history and walking guide application and does not knowingly collect personal information from children under 13.
+        We may update this Privacy Policy periodically to reflect new features or regulatory requirements. The updated effective date will always be displayed at the top of this page.
+      </p>
+      <p>
+        <strong>Contact Us:</strong> For privacy inquiries or data questions regarding WanderCast, please contact the WanderCast Studio team at
+        <a href="mailto:privacy@wandercast.fm" style="color: var(--accent-teal);">privacy@wandercast.fm</a>.
+      </p>
+    </div>
+
+    <div class="footer">
+      &copy; 2026 WanderCast 99.1 FM • Local-First AI Neighborhood Documentary Radio
+    </div>
+  </div>
+</body>
+</html>
